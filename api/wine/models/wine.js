@@ -5,6 +5,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var WineSchema = new Schema({
+    listId: Number,
     brand: String,
     description: String,
     type: String,

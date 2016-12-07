@@ -18,6 +18,7 @@ module.exports = {
     post: function (req, res) {
         var wine = new Wine();
 
+        wine.listId = req.body.listId;
         wine.brand = req.body.brand;
         wine.description = req.body.description;
         wine.type = req.body.type;
@@ -60,6 +61,7 @@ module.exports = {
             if (err)
                 console.log(err);
 
+            wine.listId = req.body.listId;
             wine.brand = req.body.brand;
             wine.description = req.body.description;
             wine.type = req.body.type;
