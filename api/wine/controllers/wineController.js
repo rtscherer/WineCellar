@@ -27,6 +27,7 @@ module.exports = {
         wine.vintage = req.body.vintage;
         wine.image = req.body.image;
         wine.notes = req.body.notes;
+        wine.price = req.body.price;
         wine.lastUpdate = Date.now();
         
         wine.save(function (err) {
@@ -68,6 +69,7 @@ module.exports = {
             wine.vintage = req.body.vintage;
             wine.image = req.body.image;
             wine.notes = req.body.notes;
+            wine.price = req.body.price;
             wine.lastUpdate = Date.now();
             
             wine.save(function(err) {
