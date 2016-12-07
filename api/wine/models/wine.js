@@ -13,6 +13,7 @@ var WineSchema = new Schema({
     year: String,
     vintage: String,
     image: String,
+    notes:String,
     lastUpdate: Date
 });
 
